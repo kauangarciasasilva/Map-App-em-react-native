@@ -10,7 +10,7 @@ export default class IconMenu extends Component {
     private styles = StyleSheet.create({
          searchmenu:{
             top:1,
-            left:1,
+            left:20,
             height:20,
           },
       

@@ -1,19 +1,19 @@
 import { Component } from "react";
 import {StyleSheet,  TouchableOpacity, View } from 'react-native';
-import { MaterialIcons } from '@expo/vector-icons';
 
-export default class IconSeach extends Component {
+import { Entypo } from '@expo/vector-icons';
+export default class IconPaper extends Component {
     
     private handleSearch = () => {
      
     };
     private styles = StyleSheet.create({
       
-  searchlupa:{
-    top:1,
-    left:5,
-    height:20,
-  },
+      searchpaper:{
+        top:1,
+        left:295,
+        height:20,
+      },
       
 
     });
