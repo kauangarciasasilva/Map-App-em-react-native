@@ -1,10 +1,11 @@
 import { Component } from "react";
 import React from 'react';
 import MapView from 'react-native-maps';
-import { StyleSheet, Text,  View } from 'react-native';
+import { StyleSheet, Text, View as SafeAreaView } from 'react-native';
 import NavBar from "../navBar";
+import { SafeAreaProvider as View } from "react-native-safe-area-context";
 
-export default class Map extends Component {
+export default class MapBar extends Component {
 
   private styles = StyleSheet.create({
     container: {
@@ -29,21 +30,24 @@ export default class Map extends Component {
       padding: 5,
 
     },
-  
+
   });
   render() {
     return (
-      <View style={this.styles.container}>
+      <View>
+        <SafeAreaView style={this.styles.container}>
 
-        <MapView style={this.styles.map} />
+          <MapView style={this.styles.map} />
 
-        <View style={this.styles.search}>
-          
-        <NavBar/>
+          <View style={this.styles.search}>
 
-        </View>
+            <NavBar />
 
-      </View>
+          </View>
+
+        </SafeAreaView>
+     </View >
+    
     );
 
   }
