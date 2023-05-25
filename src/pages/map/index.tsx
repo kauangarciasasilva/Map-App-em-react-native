@@ -39,11 +39,11 @@ export default class MapBar extends Component {
 
           <MapView style={this.styles.map} />
 
-          <View style={this.styles.search}>
+          <SafeAreaView style={this.styles.search}>
 
             <NavBar />
 
-          </View>
+          </SafeAreaView>
 
         </SafeAreaView>
      </View >
